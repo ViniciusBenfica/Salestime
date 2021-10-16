@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  db-crud:
+    image: mysql:latest
+    container_name: db-crud
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: crud
+    volumes:
+      - ./db-data:/data/db-crud
