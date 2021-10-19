@@ -5,6 +5,8 @@ Rode os seguintes comandos no cmd
 `yarn dev`
 
 ## Rotas
+| Método | Descrição |
+|---|---|
 | `GET /getAllUSers` | Retorna as informações de todos os registros. |
 | `GET /getUser/:username` | Retorna as informações de um registros pelo nome. |
 | `POST /creatUser` | Cria um novo registro. |
