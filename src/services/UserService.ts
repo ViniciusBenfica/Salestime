@@ -7,15 +7,15 @@ interface IUSerService{
 
 class User implements IUSerService{
 
-    maximumLetter = (username: String) => {
+    maximumLetter = (username: string) => {
         if(username.length >= 10){
             return false
         }
         return true
     }
 
-    criptPassword = async (password: String) => {
-        return await bcrypt.hash(password.toString(), 10)
+    criptPassword = async (password: string) => {
+        return await bcrypt.hash(password, 10)
     }
 
 }
